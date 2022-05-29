@@ -5,5 +5,5 @@ This blog will re-organize my previous posts on other websites, and more importa
 
 # Contents
 ## Ubuntu
-### Ubuntu tricks
+### A bag of Ubuntu tricks
 #### [Adjusting brightness easily when multi-screening](./Ubuntu/Ubuntu_tricks/brightness.md)
