@@ -24,3 +24,4 @@ If under this condition, what we need is the file `rtl_bt/rtl8761b_fw.bin` on th
 
 # 2. References
 [技术总结《在Ubuntu中使用USB蓝牙适配器》](https://www.meltycriss.com/2021/12/29/tech-ubuntu-bluetooth/)
+[USB5.0蓝牙发射器在Ubuntu 18.04上的安装和使用](https://zhuanlan.zhihu.com/p/347415832)
