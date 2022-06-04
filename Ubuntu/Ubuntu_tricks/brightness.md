@@ -33,6 +33,6 @@ brightness-controller
 ```
 Apparently, there's more than barely sliding brightness. XD
 
-# Reference
+# References
 1. [linux终端调节亮度,从Ubuntu终端控制屏幕亮度](https://blog.csdn.net/weixin_35960434/article/details/116717942)
 2. [lordamit-Brightness](https://github.com/lordamit/Brightness)
