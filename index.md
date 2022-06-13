@@ -8,3 +8,6 @@ This blog will re-organize my previous posts on other websites, and more importa
 ### A bag of Ubuntu tricks
 #### [Adjusting Brightness Easily When Multi-screening](./Ubuntu/Ubuntu_tricks/brightness.md)
 #### [Why My USB Bluetooth Adapter Doesn't Work](./Ubuntu/Ubuntu_tricks/bluetooth_adapter.md)
+
+## Python
+
