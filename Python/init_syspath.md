@@ -26,3 +26,7 @@ In this way, everything will be taken care of like the file is in the directory 
 
 This move is really simple, but it's noticed that some names can be multi-imported.
 
+
+
+# References
+[Python __init__.py 作用详解](https://www.jianshu.com/p/73f7fbf75183)
