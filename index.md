@@ -12,3 +12,4 @@ This blog will re-organize my previous posts on other websites, and more importa
 ## Python
 #### [Importing a directory from outside](./Python/init_syspath.md)
 
+## Algorithms
