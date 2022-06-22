@@ -1,4 +1,4 @@
-# What is proble
+# What is problem
 We need to provide a package as a whole some time, like to make it a black box for others to use. We may do all the stuff inside the directory, but what we want is to import it from outside. 
 So, here are some great tips.
 
