@@ -1,0 +1,4 @@
+# Screen Resolution
+
++ BetterDisplay
++ SwitchResX
