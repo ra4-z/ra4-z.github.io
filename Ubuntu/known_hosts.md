@@ -1,0 +1,17 @@
+修改了ssh的key之后，需要删除known hosts中相关的ip的内容，否则会一直以之前的信息进行尝试连接，永远出错。相当于对方换了一个电话号码，你每次想联系他还是用之前的电话号码。
+一台机器如果有多个linux环境包括用户、系统、docker下的linux系统，每次连接也需要删除该ip相关的内容。相当于这个电话号码的主人是ip地址。
+
+ssh会把你每个你访问过计算机的公钥(public key)都记录在~/.ssh/known_hosts。当下次访问相同计算机时，OpenSSH会核对公钥。如果公钥不同，OpenSSH会发出警告， 避免你受到DNS Hijack之类的攻击。
+
+
+Linux下，修改
+
+~/.ssh/konwn_hosts
+
+Windows下，修改
+
+C:/Users/当前user名字/.ssh/konwn_hosts
+
+
+references:
+[SSH报错:Windows下删除known_hosts](https://www.jianshu.com/p/2b99221f131f?u_atoken=1a8d3a15-58aa-4407-be5b-26e3564fe3b4&u_asession=011DXGZMOTjrA2nQr27xYOMZiDuCypnJL4goqaWfcVRmpqAGvwn4CNWzyV0VQv7qmXX0KNBwm7Lovlpxjd_P_q4JsKWYrT3W_NKPr8w6oU7K-3fzq1m9uZOEFbZETrtIGEPpcarp92QKzyJKyYjREPlmBkFo3NEHBv0PZUm6pbxQU&u_asig=05aDW-yCHahwDpp8Xy5nhr0WCdGDTAFRfYIOvzGhgeOU08OJPB5sCyJR8h6IOQyHPtdHH9F9siY8rfX64L6BbJ0gN50hwoiaW_4nT-euHZdBJLY6JMYCt5U4hgSogQ1aUuKKve-maDg8QBbnHXc3l1pKukdpMV0DL1syS1w9JnxRr9JS7q8ZD7Xtz2Ly-b0kmuyAKRFSVJkkdwVUnyHAIJzbZ6G-nBFwJlWt23j6Mvoau0zqPCaIaMhD2aI1Z83hpzWPRPQyB_SKrj-61LB_f61u3h9VXwMyh6PgyDIVSG1W9_CkulQ-tU9PMZlpZR45z0Y-41c2llcchdtI8N7GcXUx_hSbYWq0vyMvwJfeJLHr0F_vgIVun9g2KR6n_aFIXtmWspDxyAEEo4kbsryBKb9Q&u_aref=DmZPVA3eVwYCQVFZn3GNOZFa0zA%3D)

@@ -2,3 +2,8 @@
 
 + BetterDisplay
 + SwitchResX
+
+
+# Screen Brightness
+
++ MonitorControl      
