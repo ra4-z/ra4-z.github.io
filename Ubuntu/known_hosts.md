@@ -1,4 +1,5 @@
 修改了ssh的key之后，需要删除known hosts中相关的ip的内容，否则会一直以之前的信息进行尝试连接，永远出错。相当于对方换了一个电话号码，你每次想联系他还是用之前的电话号码。
+修改ubuntu默认目录会需要重新生成ssh key
 一台机器如果有多个linux环境包括用户、系统、docker下的linux系统，每次连接也需要删除该ip相关的内容。相当于这个电话号码的主人是ip地址。
 
 ssh会把你每个你访问过计算机的公钥(public key)都记录在~/.ssh/known_hosts。当下次访问相同计算机时，OpenSSH会核对公钥。如果公钥不同，OpenSSH会发出警告， 避免你受到DNS Hijack之类的攻击。
