@@ -6,7 +6,7 @@
   <link href="https://ra4-z.github.io/atom.xml" rel="self"/>
   
   <link href="https://ra4-z.github.io/"/>
-  <updated>2022-07-24T17:19:07.867Z</updated>
+  <updated>2022-07-24T17:59:59.629Z</updated>
   <id>https://ra4-z.github.io/</id>
   
   <author>
@@ -17,15 +17,25 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>test</title>
-    <link href="https://ra4-z.github.io/2022/07/25/test/"/>
-    <id>https://ra4-z.github.io/2022/07/25/test/</id>
-    <published>2022-07-24T17:19:07.000Z</published>
-    <updated>2022-07-24T17:19:07.867Z</updated>
+    <title>TODO</title>
+    <link href="https://ra4-z.github.io/2022/07/25/TODO/"/>
+    <id>https://ra4-z.github.io/2022/07/25/TODO/</id>
+    <published>2022-07-24T17:56:07.000Z</published>
+    <updated>2022-07-24T17:59:59.629Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li><input disabled="" type="checkbox"> <a href="https://titangene.github.io/article/hexo-disqus.html">Hexo 加入 Disqus 留言版 (包含留言數)</a></li><li><input disabled="" type="checkbox"> 搬运gitpages到github</li><li><input disabled="" type="checkbox"> 搬运segmentfault到gitpages</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&gt; &lt;a href=&quot;https://titangene.github.io/article/hexo-disqus.html&quot;&gt;Hexo 加入 Disqus 留言版 (包含留言數)&lt;/a&gt;&lt;/</summary>
+      
     
     
     
     
+    <category term="TODO" scheme="https://ra4-z.github.io/tags/TODO/"/>
     
   </entry>
   
