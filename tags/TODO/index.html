@@ -39,6 +39,8 @@
   
   
   
+    <link href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.3.5/dist/jquery.fancybox.min.css" rel="stylesheet">
+  
   
 <meta name="generator" content="Hexo 6.2.0"></head>
 
@@ -221,15 +223,6 @@
     
       
   <div class="widget">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget-body tagcloud">
-      <a href="/tags/TODO/" style="font-size: 13px;">TODO</a> <a href="/tags/test/" style="font-size: 13px;">test</a>
-    </div>
-  </div>
-
-    
-      
-  <div class="widget">
     <h3 class="widget-title">Archive</h3>
     <div class="widget-body">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/07/">July 2022</a><span class="archive-list-count">3</span></li></ul>
@@ -251,10 +244,10 @@
                 
               </p>
               <p class="item-title">
-                <a href="/2022/07/26/repository/" class="title">repository</a>
+                <a href="/2022/07/26/repository/" class="title">Repositories</a>
               </p>
               <p class="item-date">
-                <time datetime="2022-07-25T17:27:22.000Z" itemprop="datePublished">2022-07-26</time>
+                <time datetime="2022-07-25T17:27:22.123Z" itemprop="datePublished">2022-07-26</time>
               </p>
             </div>
           </li>
@@ -407,6 +400,35 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
 
+
+  <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.3.5/dist/jquery.fancybox.min.js"></script>
+  <script>
+  //利用 FancyBox 实现点击图片放大
+  $(document).ready(function() {
+    $('article img').not('[hidden]').not('.panel-body img').each(function() {
+      var $image = $(this);
+      var imageCaption = $image.attr('alt');
+      var $imageWrapLink = $image.parent('a');
+      if ($imageWrapLink.length < 1) {
+        var src = this.getAttribute('src');
+        var idx = src.lastIndexOf('?');
+        if (idx != -1) {
+          src = src.substring(0, idx);
+        }
+        $imageWrapLink = $image.wrap('<a href="' + src + '"></a>').parent('a');
+      }
+      $imageWrapLink.attr('data-fancybox', 'images');
+      if (imageCaption) {
+        $imageWrapLink.attr('data-caption', imageCaption);
+      }
+    });
+    $().fancybox({
+      selector: '[data-fancybox="images"]',
+      hash: false,
+      loop: false,
+    });
+  });
+  </script>
 
 
 
