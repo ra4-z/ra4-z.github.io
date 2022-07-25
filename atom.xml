@@ -6,7 +6,7 @@
   <link href="https://ra4-z.github.io/atom.xml" rel="self"/>
   
   <link href="https://ra4-z.github.io/"/>
-  <updated>2022-07-25T18:11:05.770Z</updated>
+  <updated>2022-07-25T18:15:28.658Z</updated>
   <id>https://ra4-z.github.io/</id>
   
   <author>
@@ -15,6 +15,19 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>categories</title>
+    <link href="https://ra4-z.github.io/2022/07/26/categories/"/>
+    <id>https://ra4-z.github.io/2022/07/26/categories/</id>
+    <published>2022-07-25T18:15:09.791Z</published>
+    <updated>2022-07-25T18:15:28.658Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>tags</title>
