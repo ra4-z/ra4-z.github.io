@@ -4,7 +4,7 @@ https://ra4-z.github.io/2022/07/26/tags/
 https://ra4-z.github.io/2022/07/26/repository/
 https://ra4-z.github.io/2022/07/24/hello-world/
 https://ra4-z.github.io/
-https://ra4-z.github.io/tags/test/
 https://ra4-z.github.io/tags/TODO/
+https://ra4-z.github.io/tags/test/
 https://ra4-z.github.io/categories/TODO/
 https://ra4-z.github.io/categories/TODO/test/
