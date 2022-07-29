@@ -92,6 +92,13 @@
 
   
   <url>
+    <loc>https://ra4-z.github.io/tags/hexo/</loc>
+    <lastmod>2022-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://ra4-z.github.io/tags/ssh/</loc>
     <lastmod>2022-07-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -121,13 +128,6 @@
   
   <url>
     <loc>https://ra4-z.github.io/tags/cudnn/</loc>
-    <lastmod>2022-07-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ra4-z.github.io/tags/hexo/</loc>
     <lastmod>2022-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
