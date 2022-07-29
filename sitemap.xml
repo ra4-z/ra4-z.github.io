@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://ra4-z.github.io/2022/07/29/ubuntu_install/</loc>
-    
-    <lastmod>2022-07-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://ra4-z.github.io/2022/07/25/TODO/</loc>
     
     <lastmod>2022-07-29</lastmod>
@@ -99,13 +90,6 @@
   </url>
   
   <url>
-    <loc>https://ra4-z.github.io/tags/ubuntu-driver-cuda-cudnn/</loc>
-    <lastmod>2022-07-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://ra4-z.github.io/tags/TODO/</loc>
     <lastmod>2022-07-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -113,13 +97,6 @@
   </url>
   
 
-  
-  <url>
-    <loc>https://ra4-z.github.io/categories/ubuntu%E5%88%9D%E5%A7%8B%E5%8C%96/</loc>
-    <lastmod>2022-07-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
   
   <url>
     <loc>https://ra4-z.github.io/categories/TODO/</loc>
