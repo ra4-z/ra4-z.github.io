@@ -25,13 +25,13 @@
 <meta property="og:site_name" content="ra4&#39;s blog">
 <meta property="og:description" content="Method 1 sshd指令1sudo &#x2F;usr&#x2F;sbin&#x2F;sshd -p 12345 这样就可以远程的时候使用12345端口进行连接了。 sshd是ssh的守护进程，上面这条指令实际上是使用一个进程来监控这个端口。 如果需要停掉这个连接的端口可以： 12ps -aux | grep sshdkill -9 &amp;#123;porcess of sshd of your added port&amp;#12">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://ra4-z.github.io/.io//pic.jpg">
+<meta property="og:image" content="https://ra4-z.github.io/2021/08/12/ssh-add-port/pic.jpg">
 <meta property="article:published_time" content="2021-08-12T09:39:00.000Z">
-<meta property="article:modified_time" content="2022-07-29T11:30:33.817Z">
+<meta property="article:modified_time" content="2022-07-29T14:44:44.772Z">
 <meta property="article:author" content="ra4">
 <meta property="article:tag" content="ssh">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://ra4-z.github.io/.io//pic.jpg">
+<meta name="twitter:image" content="https://ra4-z.github.io/2021/08/12/ssh-add-port/pic.jpg">
   <!-- Canonical links -->
   <link rel="canonical" href="https://ra4-z.github.io/2021/08/12/ssh-add-port/index.html">
   
@@ -322,7 +322,7 @@
 </li>
 <li><p>查看ssh服务监听的端口是否为已设置端口：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo netstat -tunlp | grep ssh</span><br></pre></td></tr></table></figure>
-<p><img src="/.io//pic.jpg" alt="pic"><br>说明端口已经打开。可以用ssh进行连接测试，如果用该端口可以连接，则ok。否则可能是因为防火墙屏蔽了该端口，则需要防火墙打开该端口。</p>
+<p><img src="/2021/08/12/ssh-add-port/pic.jpg" alt="pic"><br>说明端口已经打开。可以用ssh进行连接测试，如果用该端口可以连接，则ok。否则可能是因为防火墙屏蔽了该端口，则需要防火墙打开该端口。</p>
 </li>
 </ol>
 <p>二、防火墙打开端口：</p>
