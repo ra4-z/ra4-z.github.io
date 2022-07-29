@@ -1,3 +1,4 @@
+https://ra4-z.github.io/2022/07/29/ubuntu_install/
 https://ra4-z.github.io/2022/07/25/TODO/
 https://ra4-z.github.io/books/index.html
 https://ra4-z.github.io/links/index.html
@@ -9,5 +10,6 @@ https://ra4-z.github.io/2022/07/24/hello-world/
 https://ra4-z.github.io/
 https://ra4-z.github.io/tags/TODO/
 https://ra4-z.github.io/tags/test/
+https://ra4-z.github.io/tags/ubuntu-cuda-cudnn/
 https://ra4-z.github.io/categories/TODO/
 https://ra4-z.github.io/categories/TODO/test/
