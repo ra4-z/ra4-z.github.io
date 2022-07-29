@@ -6,7 +6,7 @@
   <link href="https://ra4-z.github.io/atom.xml" rel="self"/>
   
   <link href="https://ra4-z.github.io/"/>
-  <updated>2022-07-29T09:27:42.664Z</updated>
+  <updated>2022-07-29T11:21:56.851Z</updated>
   <id>https://ra4-z.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ssh_add_port1</title>
+    <link href="https://ra4-z.github.io/2022/07/29/ssh-add-port1/"/>
+    <id>https://ra4-z.github.io/2022/07/29/ssh-add-port1/</id>
+    <published>2022-07-29T11:21:32.000Z</published>
+    <updated>2022-07-29T11:21:56.851Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/.io//pic.jpg" alt="pic"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/.io//pic.jpg&quot; alt=&quot;pic&quot;&gt;&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>ubuntu20.04 显卡驱动 CUDA CUDNN 官网安装教程</title>
