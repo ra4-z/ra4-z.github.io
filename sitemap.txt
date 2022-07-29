@@ -8,8 +8,9 @@ https://ra4-z.github.io/tags/index.html
 https://ra4-z.github.io/repository/index.html
 https://ra4-z.github.io/2022/07/24/hello-world/
 https://ra4-z.github.io/
-https://ra4-z.github.io/tags/TODO/
 https://ra4-z.github.io/tags/test/
-https://ra4-z.github.io/tags/ubuntu-cuda-cudnn/
+https://ra4-z.github.io/tags/ubuntu-driver-cuda-cudnn/
+https://ra4-z.github.io/tags/TODO/
+https://ra4-z.github.io/categories/ubuntu%E5%88%9D%E5%A7%8B%E5%8C%96/
 https://ra4-z.github.io/categories/TODO/
 https://ra4-z.github.io/categories/TODO/test/
