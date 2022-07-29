@@ -136,6 +136,13 @@
 
   
   <url>
+    <loc>https://ra4-z.github.io/categories/hexo/</loc>
+    <lastmod>2022-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://ra4-z.github.io/categories/net-tools/</loc>
     <lastmod>2022-07-29</lastmod>
     <changefreq>weekly</changefreq>

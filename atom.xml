@@ -6,7 +6,7 @@
   <link href="https://ra4-z.github.io/atom.xml" rel="self"/>
   
   <link href="https://ra4-z.github.io/"/>
-  <updated>2022-07-29T15:03:47.769Z</updated>
+  <updated>2022-07-29T15:09:38.871Z</updated>
   <id>https://ra4-z.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>hexo_record</title>
+    <title>Hexo Glitches Fixing Recording</title>
     <link href="https://ra4-z.github.io/2022/07/29/hexo-record/"/>
     <id>https://ra4-z.github.io/2022/07/29/hexo-record/</id>
-    <published>2022-07-29T14:51:53.749Z</published>
-    <updated>2022-07-29T15:03:47.769Z</updated>
+    <published>2022-07-29T15:00:00.000Z</published>
+    <updated>2022-07-29T15:09:38.871Z</updated>
     
     <content type="html"><![CDATA[<h1 id="图片由于路径问题无法显示"><a href="#图片由于路径问题无法显示" class="headerlink" title="图片由于路径问题无法显示"></a>图片由于路径问题无法显示</h1><p>图片无法通过插件（<code>hexo-asset-image</code>）默认使用方式显示，因为路径问题</p><p>解决：<br><a href="https://yonahwang.github.io/2019/08/30/web-bugs/hexo-add-picture/#:~:text=hexo%E9%BB%98%E8%AE%A4%E6%97%A0%E6%B3%95,%E8%BF%87%E6%89%A9%E5%B1%95%E6%8F%92%E4%BB%B6%E6%94%AF%E6%8C%81%E3%80%82">Hexo 无法加载图片（路径问题）</a></p><h1 id="pure主题无法直接显示category-links等内容"><a href="#pure主题无法直接显示category-links等内容" class="headerlink" title="pure主题无法直接显示category links等内容"></a>pure主题无法直接显示<code>category</code> <code>links</code>等内容</h1><p>解决: <a href="https://github.com/cofess/hexo-theme-pure/blob/master/README.cn.md#%E9%A1%B9%E7%9B%AE">官方文档</a></p><h1 id="取消显示侧边栏-toc-目录导航的序号"><a href="#取消显示侧边栏-toc-目录导航的序号" class="headerlink" title="取消显示侧边栏 toc 目录导航的序号"></a>取消显示侧边栏 toc 目录导航的序号</h1><p>解决：<br><a href="https://github.com/cofess/hexo-theme-pure/issues/154">取消显示侧边栏 toc 目录导航的序号</a></p>]]></content>
     
@@ -32,6 +32,8 @@
       
     
     
+    
+    <category term="hexo" scheme="https://ra4-z.github.io/categories/hexo/"/>
     
     
     <category term="hexo" scheme="https://ra4-z.github.io/tags/hexo/"/>
