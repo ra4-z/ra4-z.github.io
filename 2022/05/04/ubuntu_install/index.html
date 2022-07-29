@@ -318,7 +318,7 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ vim ~/.bashrc</span><br><span class="line"></span><br><span class="line"># 在最后加入以下两句，cuda版本号我是11.6，可能需要修改</span><br><span class="line">export PATH=/usr/local/cuda-11.6/bin$&#123;PATH:+:$&#123;PATH&#125;&#125;</span><br><span class="line">export LD_LIBRARY_PATH=/usr/local/cuda-11.6/lib64$&#123;LD_LIBRARY_PATH:+:$&#123;LD_LIBRARY_PATH&#125;&#125;</span><br><span class="line"></span><br><span class="line"># 最后</span><br><span class="line">$ source ~/.bashrc</span><br></pre></td></tr></table></figure>
 
 <h1 id="3-CUDNN"><a href="#3-CUDNN" class="headerlink" title="3. CUDNN"></a>3. CUDNN</h1><h2 id="安装-2"><a href="#安装-2" class="headerlink" title="安装"></a><a target="_blank" rel="noopener" href="https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#installlinux-deb">安装</a></h2><ol>
-<li>Navigate to your <cudnnpath> directory containing the cuDNN Debian local installer file.<br><a target="_blank" rel="noopener" href="https://developer.nvidia.com/rdp/cudnn-download">下载</a> deb文件，登录拿qq、wechat就行</li>
+<li>Navigate to your <cudnnpath> directory containing the cuDNN Debian local installer file.<br><a target="_blank" rel="noopener" href="https://developer.nvidia.com/rdp/cudnn-download">下载</a> deb文件，登录拿qq、wechat就行</cudnnpath></li>
 <li>Enable the local repository.<br><code>sudo dpkg -i cudnn-local-repo-$&#123;OS&#125;-8.x.x.x_1.0-1_amd64.deb</code><br>or<br><code>sudo dpkg -i cudnn-local-repo-$&#123;OS&#125;-8.x.x.x_1.0-1_arm64.deb</code></li>
 <li>Import the CUDA GPG key.<br><code>sudo apt-key add /var/cudnn-local-repo-*/7fa2af80.pub</code></li>
 <li>Refresh the repository metadata.<br><code>sudo apt-get update</code><blockquote>
@@ -338,7 +338,7 @@
 </ol>
 <p>恭喜！到此已经完成安装！ 你已经拥有<code>nvidia driver</code> &amp; <code>cuda11.6</code> &amp; <code>cudnn8.4.0.27-1</code>！ XD</p>
 <h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/it-Ren/p/15566581.html">Google pinyin</a><br>搜狗是shit</p>
-<p><font size=5>希望能帮到你 :)</font></p>
+<p><font size="5">希望能帮到你 :)</font></p>
 
       
     </div>
