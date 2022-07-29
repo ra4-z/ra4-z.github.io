@@ -17,21 +17,23 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>TODO | ra4&#39;s blog</title>
-  <meta name="description" content="TODO:  Hexo 加入 Disqus 留言版 (包含留言數)  pure使用指南  Icarus补充内容  搬运gitpages到github  搬运segmentfault到gitpages  Questions:Pure主题下，Categories和Tags都没有自动生成index.html文件。怎么办？About也是。为啥像tags.md那样就能有效果？？ public&#x2F;archive">
+  <title>ssh服务增加端口的两个方法 | ra4&#39;s blog</title>
+  <meta name="description" content="Method 1 sshd指令1sudo &#x2F;usr&#x2F;sbin&#x2F;sshd -p 12345 这样就可以远程的时候使用12345端口进行连接了。 sshd是ssh的守护进程，上面这条指令实际上是使用一个进程来监控这个端口。 如果需要停掉这个连接的端口可以： 12ps -aux | grep sshdkill -9 &amp;#123;porcess of sshd of your added port&amp;#12">
 <meta property="og:type" content="article">
-<meta property="og:title" content="TODO">
-<meta property="og:url" content="https://ra4-z.github.io/2022/07/25/TODO/index.html">
+<meta property="og:title" content="ssh服务增加端口的两个方法">
+<meta property="og:url" content="https://ra4-z.github.io/2021/08/12/ssh-add-port/index.html">
 <meta property="og:site_name" content="ra4&#39;s blog">
-<meta property="og:description" content="TODO:  Hexo 加入 Disqus 留言版 (包含留言數)  pure使用指南  Icarus补充内容  搬运gitpages到github  搬运segmentfault到gitpages  Questions:Pure主题下，Categories和Tags都没有自动生成index.html文件。怎么办？About也是。为啥像tags.md那样就能有效果？？ public&#x2F;archive">
+<meta property="og:description" content="Method 1 sshd指令1sudo &#x2F;usr&#x2F;sbin&#x2F;sshd -p 12345 这样就可以远程的时候使用12345端口进行连接了。 sshd是ssh的守护进程，上面这条指令实际上是使用一个进程来监控这个端口。 如果需要停掉这个连接的端口可以： 12ps -aux | grep sshdkill -9 &amp;#123;porcess of sshd of your added port&amp;#12">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-07-24T17:56:07.000Z">
-<meta property="article:modified_time" content="2022-07-29T08:34:51.308Z">
+<meta property="og:image" content="https://ra4-z.github.io/img/bVcT5U7">
+<meta property="article:published_time" content="2021-08-12T09:39:00.000Z">
+<meta property="article:modified_time" content="2022-07-29T10:46:23.317Z">
 <meta property="article:author" content="ra4">
-<meta property="article:tag" content="TODO">
+<meta property="article:tag" content="ssh">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ra4-z.github.io/img/bVcT5U7">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://ra4-z.github.io/2022/07/25/TODO/index.html">
+  <link rel="canonical" href="https://ra4-z.github.io/2021/08/12/ssh-add-port/index.html">
   
     <link rel="alternate" href="/atom.xml" title="ra4&#39;s blog" type="application/atom+xml">
   
@@ -207,7 +209,7 @@
   <div class="widget">
     <h3 class="widget-title">Categories</h3>
     <div class="widget-body">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/TODO/">TODO</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/TODO/test/">test</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/ubuntu-init/">ubuntu_init</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/net-tools/">net-tools</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ubuntu-init/">ubuntu_init</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -217,7 +219,7 @@
   <div class="widget">
     <h3 class="widget-title">Archive</h3>
     <div class="widget-body">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/07/">July 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">May 2022</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">May 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -227,7 +229,7 @@
   <div class="widget">
     <h3 class="widget-title">Tags</h3>
     <div class="widget-body">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/TODO/" rel="tag">TODO</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cuda/" rel="tag">cuda</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cudnn/" rel="tag">cudnn</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/driver/" rel="tag">driver</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ubuntu/" rel="tag">ubuntu</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/cuda/" rel="tag">cuda</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cudnn/" rel="tag">cudnn</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/driver/" rel="tag">driver</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssh/" rel="tag">ssh</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ubuntu/" rel="tag">ubuntu</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -238,16 +240,25 @@
 
   
   
+  <aside class="sidebar sidebar-toc collapse   in  " id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <nav id="toc" class="article-toc">
+      <h3 class="toc-title">Catalogue</h3>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Method-1-sshd%E6%8C%87%E4%BB%A4"><span class="toc-number">1.</span> <span class="toc-text">Method 1 sshd指令</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Method-2-%E4%BF%AE%E6%94%B9sshd-config"><span class="toc-number">2.</span> <span class="toc-text">Method 2 修改sshd_config</span></a></li></ol>
+    </nav>
+  </div>
+</aside>
+
 <main class="main" role="main">
   <div class="content">
-  <article id="post-TODO" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-ssh-add-port" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      TODO
+      ssh服务增加端口的两个方法
     </h1>
   
 
@@ -255,20 +266,20 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2022/07/25/TODO/" class="article-date">
-	  <time datetime="2022-07-24T17:56:07.000Z" itemprop="datePublished">2022-07-25</time>
+	<a href="/2021/08/12/ssh-add-port/" class="article-date">
+	  <time datetime="2021-08-12T09:39:00.000Z" itemprop="datePublished">2021-08-12</time>
 	</a>
 </span>
         
   <span class="article-category">
     <i class="icon icon-folder"></i>
-    <a class="article-category-link" href="/categories/TODO/">TODO</a>►<a class="article-category-link" href="/categories/TODO/test/">test</a>
+    <a class="article-category-link" href="/categories/net-tools/">net-tools</a>
   </span>
 
         
   <span class="article-tag">
     <i class="icon icon-tags"></i>
-	<a class="article-tag-link-link" href="/tags/TODO/" rel="tag">TODO</a>
+	<a class="article-tag-link-link" href="/tags/ssh/" rel="tag">ssh</a>
   </span>
 
 
@@ -281,10 +292,10 @@
 	</span>
 
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/07/25/TODO/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2021/08/12/ssh-add-port/#comments" class="article-comment-link">Comments</a></span>
         
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 96(words)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 315(words)</span>
 	
 	
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 1(minutes)</span>
@@ -294,20 +305,38 @@
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <h1 id="TODO"><a href="#TODO" class="headerlink" title="TODO:"></a>TODO:</h1><ul>
-<li><input checked="" disabled="" type="checkbox"> <a target="_blank" rel="noopener" href="https://titangene.github.io/article/hexo-disqus.html">Hexo 加入 Disqus 留言版 (包含留言數)</a></li>
-<li><input disabled="" type="checkbox"> <a target="_blank" rel="noopener" href="https://github.com/cofess/hexo-theme-pure/blob/master/README.cn.md">pure使用指南</a></li>
-<li><input disabled="" type="checkbox"> Icarus补充内容</li>
-<li><input disabled="" type="checkbox"> 搬运gitpages到github</li>
-<li><input disabled="" type="checkbox"> 搬运segmentfault到gitpages</li>
-</ul>
-<h1 id="Questions"><a href="#Questions" class="headerlink" title="Questions:"></a>Questions:</h1><p>Pure主题下，Categories和Tags都没有自动生成index.html文件。怎么办？<br>About也是。为啥像tags.md那样就能有效果？？</p>
-<p><code>public/archives/</code>里有个index.html文件，但<code>public/categorys/</code>和<code>public/tags/</code>没有。</p>
-<h1 id="Refenrences"><a href="#Refenrences" class="headerlink" title="Refenrences:"></a>Refenrences:</h1><h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo doc</a></p>
-<h2 id="Themes"><a href="#Themes" class="headerlink" title="Themes"></a>Themes</h2><p><a target="_blank" rel="noopener" href="https://ppoffice.github.io/hexo-theme-icarus/uncategorized/icarus%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B/">Icarus快速上手</a></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next">next theme</a></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery">blink fox</a></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">butterfly</a></p>
+        <h1 id="Method-1-sshd指令"><a href="#Method-1-sshd指令" class="headerlink" title="Method 1 sshd指令"></a>Method 1 sshd指令</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /usr/sbin/sshd -p 12345</span><br></pre></td></tr></table></figure>
+<p>这样就可以远程的时候使用12345端口进行连接了。</p>
+<p>sshd是ssh的守护进程，上面这条指令实际上是使用一个进程来监控这个端口。</p>
+<p>如果需要停掉这个连接的端口可以：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ps -aux | grep sshd</span><br><span class="line"><span class="built_in">kill</span> -9 &#123;porcess of sshd of your added port&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="Method-2-修改sshd-config"><a href="#Method-2-修改sshd-config" class="headerlink" title="Method 2 修改sshd_config"></a>Method 2 修改sshd_config</h1><ol>
+<li><p>vim &#x2F;etc&#x2F;ssh&#x2F;sshd_config添加如下一行：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Port 929</span><br></pre></td></tr></table></figure>
+
+</li>
+<li><p>重启ssh服务：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/etc/init.d/ssh restart</span><br></pre></td></tr></table></figure>
+
+</li>
+<li><p>查看ssh服务监听的端口是否为已设置端口：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo netstat -tunlp | grep ssh</span><br></pre></td></tr></table></figure>
+<p><img src="/img/bVcT5U7" alt="image.png"><br>说明端口已经打开。可以用ssh进行连接测试，如果用该端口可以连接，则ok。否则可能是因为防火墙屏蔽了该端口，则需要防火墙打开该端口。</p>
+</li>
+</ol>
+<p>二、防火墙打开端口：</p>
+<ol>
+<li><p>防火墙过滤规则中增加一条，允许对新增的端口929的访问：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -A INPUT -m state --state NEW -m tcp -p tcp --dport 929 -j ACCEPT</span><br></pre></td></tr></table></figure>
+
+</li>
+<li><p>防火墙规则查看是否生效：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables --list -n 查看端口是否生效。</span><br></pre></td></tr></table></figure></li>
+<li><p>保存</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service iptables save</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>参考<br><a target="_blank" rel="noopener" href="https://www.linuxcool.com/sshd">sshd命令 – openssh服务器守护进程</a><br><a target="_blank" rel="noopener" href="https://www.huaweicloud.com/articles/3cc874da0de5494dbf1e895c5a98f67f.html">SSH服务相关知识</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/sinat_29891353/article/details/87460790">linux ubuntu 修改ssh端口及常用命令</a><br><a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1047301">一款短小精致的SSH后门分析</a></p>
 
       
     </div>
@@ -317,7 +346,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://ra4-z.github.io/2022/07/25/TODO/" title="TODO" target="_blank" rel="external">https://ra4-z.github.io/2022/07/25/TODO/</a>
+      <a href="https://ra4-z.github.io/2021/08/12/ssh-add-port/" title="ssh服务增加端口的两个方法" target="_blank" rel="external">https://ra4-z.github.io/2021/08/12/ssh-add-port/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -365,11 +394,19 @@
   
   <ul class="pager pull-left">
     
-    
-    <li class="next">
-      <a href="/2022/05/04/ubuntu_install/" title="ubuntu20.04 显卡驱动 CUDA CUDNN 官网安装教程"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    <li class="prev">
+      <a href="/2022/05/04/ubuntu_install/" title="ubuntu20.04 显卡驱动 CUDA CUDNN 官网安装教程"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;Newer</span></a>
     </li>
     
+    
+    
+    <li class="toggle-toc">
+      <a class="toggle-btn " data-toggle="collapse" href="#collapseToc" aria-expanded="false" title="Catalogue" role="button">    <span>[&nbsp;</span><span>Catalogue</span>
+        <i class="text-collapsed icon icon-anchor"></i>
+        <i class="text-in icon icon-close"></i>
+        <span>]</span>
+      </a>
+    </li>
     
   </ul>
   
@@ -504,9 +541,9 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
     <script defer>
     var disqus_config = function () {
         
-            this.page.url = 'https://ra4-z.github.io/2022/07/25/TODO/';
+            this.page.url = 'https://ra4-z.github.io/2021/08/12/ssh-add-port/';
         
-        this.page.identifier = 'TODO';
+        this.page.identifier = 'ssh-add-port';
     };
     (function() { 
         var d = document, s = d.createElement('script');  

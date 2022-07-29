@@ -6,7 +6,7 @@
   <link href="https://ra4-z.github.io/atom.xml" rel="self"/>
   
   <link href="https://ra4-z.github.io/"/>
-  <updated>2022-07-29T08:34:51.308Z</updated>
+  <updated>2022-07-29T09:27:42.664Z</updated>
   <id>https://ra4-z.github.io/</id>
   
   <author>
@@ -15,33 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>TODO</title>
-    <link href="https://ra4-z.github.io/2022/07/25/TODO/"/>
-    <id>https://ra4-z.github.io/2022/07/25/TODO/</id>
-    <published>2022-07-24T17:56:07.000Z</published>
-    <updated>2022-07-29T08:34:51.308Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="TODO"><a href="#TODO" class="headerlink" title="TODO:"></a>TODO:</h1><ul><li><input checked="" disabled="" type="checkbox"> <a href="https://titangene.github.io/article/hexo-disqus.html">Hexo 加入 Disqus 留言版 (包含留言數)</a></li><li><input disabled="" type="checkbox"> <a href="https://github.com/cofess/hexo-theme-pure/blob/master/README.cn.md">pure使用指南</a></li><li><input disabled="" type="checkbox"> Icarus补充内容</li><li><input disabled="" type="checkbox"> 搬运gitpages到github</li><li><input disabled="" type="checkbox"> 搬运segmentfault到gitpages</li></ul><h1 id="Questions"><a href="#Questions" class="headerlink" title="Questions:"></a>Questions:</h1><p>Pure主题下，Categories和Tags都没有自动生成index.html文件。怎么办？<br>About也是。为啥像tags.md那样就能有效果？？</p><p><code>public/archives/</code>里有个index.html文件，但<code>public/categorys/</code>和<code>public/tags/</code>没有。</p><h1 id="Refenrences"><a href="#Refenrences" class="headerlink" title="Refenrences:"></a>Refenrences:</h1><h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><p><a href="https://hexo.io/zh-cn/">Hexo doc</a></p><h2 id="Themes"><a href="#Themes" class="headerlink" title="Themes"></a>Themes</h2><p><a href="https://ppoffice.github.io/hexo-theme-icarus/uncategorized/icarus%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B/">Icarus快速上手</a></p><p><a href="https://github.com/theme-next/hexo-theme-next">next theme</a></p><p><a href="https://github.com/blinkfox/hexo-theme-matery">blink fox</a></p><p><a href="https://github.com/jerryc127/hexo-theme-butterfly">butterfly</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;TODO&quot;&gt;&lt;a href=&quot;#TODO&quot; class=&quot;headerlink&quot; title=&quot;TODO:&quot;&gt;&lt;/a&gt;TODO:&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;input checked=&quot;&quot; disabled=&quot;&quot; type=&quot;checkbox&quot;&gt; &lt;a href</summary>
-      
-    
-    
-    
-    <category term="TODO" scheme="https://ra4-z.github.io/categories/TODO/"/>
-    
-    <category term="test" scheme="https://ra4-z.github.io/categories/TODO/test/"/>
-    
-    
-    <category term="TODO" scheme="https://ra4-z.github.io/tags/TODO/"/>
-    
-  </entry>
   
   <entry>
     <title>ubuntu20.04 显卡驱动 CUDA CUDNN 官网安装教程</title>
@@ -70,6 +43,30 @@
     <category term="cuda" scheme="https://ra4-z.github.io/tags/cuda/"/>
     
     <category term="cudnn" scheme="https://ra4-z.github.io/tags/cudnn/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ssh服务增加端口的两个方法</title>
+    <link href="https://ra4-z.github.io/2021/08/12/ssh-add-port/"/>
+    <id>https://ra4-z.github.io/2021/08/12/ssh-add-port/</id>
+    <published>2021-08-12T09:39:00.000Z</published>
+    <updated>2022-07-29T10:46:23.317Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Method-1-sshd指令"><a href="#Method-1-sshd指令" class="headerlink" title="Method 1 sshd指令"></a>Method 1 sshd指令</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /usr/sbin/sshd -p 12345</span><br></pre></td></tr></table></figure><p>这样就可以远程的时候使用12345端口进行连接了。</p><p>sshd是ssh的守护进程，上面这条指令实际上是使用一个进程来监控这个端口。</p><p>如果需要停掉这个连接的端口可以：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ps -aux | grep sshd</span><br><span class="line"><span class="built_in">kill</span> -9 &#123;porcess of sshd of your added port&#125;</span><br></pre></td></tr></table></figure><h1 id="Method-2-修改sshd-config"><a href="#Method-2-修改sshd-config" class="headerlink" title="Method 2 修改sshd_config"></a>Method 2 修改sshd_config</h1><ol><li><p>vim &#x2F;etc&#x2F;ssh&#x2F;sshd_config添加如下一行：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Port 929</span><br></pre></td></tr></table></figure></li><li><p>重启ssh服务：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/etc/init.d/ssh restart</span><br></pre></td></tr></table></figure></li><li><p>查看ssh服务监听的端口是否为已设置端口：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo netstat -tunlp | grep ssh</span><br></pre></td></tr></table></figure><p><img src="/img/bVcT5U7" alt="image.png"><br>说明端口已经打开。可以用ssh进行连接测试，如果用该端口可以连接，则ok。否则可能是因为防火墙屏蔽了该端口，则需要防火墙打开该端口。</p></li></ol><p>二、防火墙打开端口：</p><ol><li><p>防火墙过滤规则中增加一条，允许对新增的端口929的访问：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -A INPUT -m state --state NEW -m tcp -p tcp --dport 929 -j ACCEPT</span><br></pre></td></tr></table></figure></li><li><p>防火墙规则查看是否生效：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables --list -n 查看端口是否生效。</span><br></pre></td></tr></table></figure></li><li><p>保存</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service iptables save</span><br></pre></td></tr></table></figure></li></ol><p>参考<br><a href="https://www.linuxcool.com/sshd">sshd命令 – openssh服务器守护进程</a><br><a href="https://www.huaweicloud.com/articles/3cc874da0de5494dbf1e895c5a98f67f.html">SSH服务相关知识</a><br><a href="https://blog.csdn.net/sinat_29891353/article/details/87460790">linux ubuntu 修改ssh端口及常用命令</a><br><a href="https://cloud.tencent.com/developer/article/1047301">一款短小精致的SSH后门分析</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Method-1-sshd指令&quot;&gt;&lt;a href=&quot;#Method-1-sshd指令&quot; class=&quot;headerlink&quot; title=&quot;Method 1 sshd指令&quot;&gt;&lt;/a&gt;Method 1 sshd指令&lt;/h1&gt;&lt;figure class=&quot;highli</summary>
+      
+    
+    
+    
+    <category term="net-tools" scheme="https://ra4-z.github.io/categories/net-tools/"/>
+    
+    
+    <category term="ssh" scheme="https://ra4-z.github.io/tags/ssh/"/>
     
   </entry>
   
