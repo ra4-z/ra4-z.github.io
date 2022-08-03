@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ra4-z.github.io/2021/08/12/c-vs-cpp/</loc>
+    
+    <lastmod>2022-08-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://ra4-z.github.io/2021/08/12/ssh-add-port/</loc>
     
     <lastmod>2022-08-01</lastmod>
@@ -85,7 +94,7 @@
 
   <url>
     <loc>https://ra4-z.github.io/</loc>
-    <lastmod>2022-08-01</lastmod>
+    <lastmod>2022-08-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -93,42 +102,42 @@
   
   <url>
     <loc>https://ra4-z.github.io/tags/hexo/</loc>
-    <lastmod>2022-08-01</lastmod>
+    <lastmod>2022-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ra4-z.github.io/tags/ssh/</loc>
-    <lastmod>2022-08-01</lastmod>
+    <lastmod>2022-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ra4-z.github.io/tags/ubuntu/</loc>
-    <lastmod>2022-08-01</lastmod>
+    <lastmod>2022-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ra4-z.github.io/tags/driver/</loc>
-    <lastmod>2022-08-01</lastmod>
+    <lastmod>2022-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ra4-z.github.io/tags/cuda/</loc>
-    <lastmod>2022-08-01</lastmod>
+    <lastmod>2022-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ra4-z.github.io/tags/cudnn/</loc>
-    <lastmod>2022-08-01</lastmod>
+    <lastmod>2022-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -137,21 +146,28 @@
   
   <url>
     <loc>https://ra4-z.github.io/categories/hexo/</loc>
-    <lastmod>2022-08-01</lastmod>
+    <lastmod>2022-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ra4-z.github.io/categories/cpp-learning/</loc>
+    <lastmod>2022-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ra4-z.github.io/categories/net-tools/</loc>
-    <lastmod>2022-08-01</lastmod>
+    <lastmod>2022-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ra4-z.github.io/categories/ubuntu-init/</loc>
-    <lastmod>2022-08-01</lastmod>
+    <lastmod>2022-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

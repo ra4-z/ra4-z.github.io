@@ -71,6 +71,28 @@
   </entry>
   
   <entry>
+    <title>c++ = c + ?</title>
+    <link href="https://ra4-z.github.io/2021/08/12/c-vs-cpp/"/>
+    <id>https://ra4-z.github.io/2021/08/12/c-vs-cpp/</id>
+    <published>2021-08-12T09:39:00.000Z</published>
+    <updated>2022-08-03T15:02:50.637Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="namespace"><a href="#namespace" class="headerlink" title="namespace"></a>namespace</h1><h1 id="const"><a href="#const" class="headerlink" title="const"></a>const</h1><p>!考点<br><a href="https://www.zhihu.com/question/31044695/answer/51839777">从右往左看法</a></p><ol><li>const int * p;</li><li>int const * p;</li><li>int * const p;</li><li>const int * const p;<br>首先，4没有什么好说的。其他的都首先找到变量p，然后从右往左解析。看看1，p是一个指针，指向的是一个int，然后int是const的。即p是一个指向const int的指针。看看2，p是一个指针，指向一个const什么东西，然后发现const的是int。即p是一个指向const int的指针。看看3，p是一个const的什么东西，然后发现是const的指针，然后发现指向的是int。即p是一个指向int的const指针。看看4，其实不需要分析了，就是最严格的形式。</li></ol><h1 id="new-x2F-delete"><a href="#new-x2F-delete" class="headerlink" title="new&#x2F;delete"></a>new&#x2F;delete</h1><p>！考点<br>new&#x2F;delete表达式与malloc&#x2F;free的区别是？<br>1）malloc&#x2F;free是C&#x2F;C++语言的标准库函数，new&#x2F;delete是C++的运算符或表达式 ；<br>2）new能够自动分配空间大小，malloc需要传入参数； 3）new开辟空间的同时还对空间做了初始化的操作，而malloc不行；<br>4）new&#x2F;delete能对对象进行构造和析构函数的调用，进而对内存进行更加详细的工 作，而malloc&#x2F;free不能。</p><h1 id="引用-x2F-别名"><a href="#引用-x2F-别名" class="headerlink" title="引用&#x2F;别名"></a>引用&#x2F;别名</h1><h1 id="强制转换"><a href="#强制转换" class="headerlink" title="强制转换"></a>强制转换</h1><p>static_cast: 一般转换</p><p>dynamic_cast:基类、派生类</p><p>const_cast: 常量指针&#x2F;常量引用&#x2F;常量对象，转换成非常量（且指向原来对象）</p><p>reinterpret_cast:重新解释，随意转换</p><h1 id="函数重载"><a href="#函数重载" class="headerlink" title="函数重载"></a>函数重载</h1><h1 id="函数默认参数"><a href="#函数默认参数" class="headerlink" title="函数默认参数"></a>函数默认参数</h1><h1 id="bool-类型"><a href="#bool-类型" class="headerlink" title="bool 类型"></a>bool 类型</h1><h1 id="inline-函数"><a href="#inline-函数" class="headerlink" title="inline 函数"></a>inline 函数</h1><h1 id="异常安全"><a href="#异常安全" class="headerlink" title="异常安全"></a>异常安全</h1><p><code>throw</code></p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">double</span> <span class="title">division</span><span class="params">(<span class="type">double</span> x, <span class="type">double</span> y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(y == <span class="number">0</span>)</span><br><span class="line">        <span class="keyword">throw</span> <span class="string">&quot;Division by zero condition!&quot;</span>;</span><br><span class="line"><span class="keyword">return</span> x / y; &#125;</span><br></pre></td></tr></table></figure><p><code>try catch</code></p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">test</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">double</span> x, y;</span><br><span class="line">    cin &gt;&gt; x &gt;&gt; y;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="keyword">if</span>(y == <span class="number">0</span>)</span><br><span class="line">            <span class="keyword">throw</span> y;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            cout &lt;&lt; (x / y) &lt;&lt; endl;</span><br><span class="line">    &#125; <span class="built_in">catch</span>(<span class="type">double</span> d) &#123;</span><br><span class="line">cout &lt;&lt; <span class="string">&quot;catch(double)&quot;</span> &lt;&lt; endl;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;namespace&quot;&gt;&lt;a href=&quot;#namespace&quot; class=&quot;headerlink&quot; title=&quot;namespace&quot;&gt;&lt;/a&gt;namespace&lt;/h1&gt;&lt;h1 id=&quot;const&quot;&gt;&lt;a href=&quot;#const&quot; class=&quot;header</summary>
+      
+    
+    
+    
+    <category term="cpp learning" scheme="https://ra4-z.github.io/categories/cpp-learning/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>ssh服务增加端口的两个方法</title>
     <link href="https://ra4-z.github.io/2021/08/12/ssh-add-port/"/>
     <id>https://ra4-z.github.io/2021/08/12/ssh-add-port/</id>

@@ -1,3 +1,4 @@
+https://ra4-z.github.io/2021/08/12/c-vs-cpp/
 https://ra4-z.github.io/2021/08/12/ssh-add-port/
 https://ra4-z.github.io/2022/05/04/ubuntu_install/
 https://ra4-z.github.io/2022/07/29/hexo-record/
@@ -15,5 +16,6 @@ https://ra4-z.github.io/tags/driver/
 https://ra4-z.github.io/tags/cuda/
 https://ra4-z.github.io/tags/cudnn/
 https://ra4-z.github.io/categories/hexo/
+https://ra4-z.github.io/categories/cpp-learning/
 https://ra4-z.github.io/categories/net-tools/
 https://ra4-z.github.io/categories/ubuntu-init/
