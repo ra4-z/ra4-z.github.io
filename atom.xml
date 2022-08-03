@@ -6,7 +6,7 @@
   <link href="https://ra4-z.github.io/atom.xml" rel="self"/>
   
   <link href="https://ra4-z.github.io/"/>
-  <updated>2022-08-03T16:07:39.378Z</updated>
+  <updated>2022-08-03T16:31:25.996Z</updated>
   <id>https://ra4-z.github.io/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>cpp_IO_stream</title>
+    <link href="https://ra4-z.github.io/2022/08/04/cpp-IO-stream/"/>
+    <id>https://ra4-z.github.io/2022/08/04/cpp-IO-stream/</id>
+    <published>2022-08-03T16:24:57.000Z</published>
+    <updated>2022-08-03T16:31:25.996Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="类型"><a href="#类型" class="headerlink" title="类型"></a>类型</h1><ol><li>标准I&#x2F;O:键盘-&gt;屏幕</li><li>文件I&#x2F;O</li><li>字符串I&#x2F;O:字符串数组作为存储空间</li></ol><h1 id="状态"><a href="#状态" class="headerlink" title="状态"></a>状态</h1><ol><li>badbit 表示发生系统级的错误，如不可恢复的读写错误。通常情况下一旦 badbit 被置位，流就无法再使用了。</li><li>failbit 表示发生可恢复的错误，如期望读取一个数值，却读出一个字符等错误。这种问题通常是可以修改的，流还可以继续使用。 </li><li>当到达文件的结束位置时，eofbit 和 failbit 都会被置位。</li><li>goodbit 被置位表示流未发生错误。如果badbit、 failbit 和eofbit 任何 一个被置位，则检查流状态的条件会失。</li></ol><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">bool</span> <span class="title">bad</span><span class="params">()</span> <span class="type">const</span></span>; <span class="comment">//若流的badbit置位，则返回true;否则返回false</span></span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">fail</span><span class="params">()</span> <span class="type">const</span></span>; <span class="comment">//若流的failbit或badbit置位，则返回true;</span></span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">eof</span><span class="params">()</span> <span class="type">const</span></span>; <span class="comment">//若流的eofbit置位，则返回true;</span></span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">good</span><span class="params">()</span> <span class="type">const</span></span>; <span class="comment">//若流处于有效状态，则返回true;</span></span><br><span class="line"><span class="function">iostate <span class="title">rdstate</span><span class="params">()</span> <span class="type">const</span></span>; <span class="comment">//获取流的状态</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">setstate</span><span class="params">(iostate state)</span></span>; <span class="comment">//设置流的状态</span></span><br><span class="line"><span class="comment">//clear的无参版本会复位所有错误标志位*(重置流的状态)</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">clear</span><span class="params">(std::ios_base::iostate state = std::ios_base::goodbit)</span></span>;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;类型&quot;&gt;&lt;a href=&quot;#类型&quot; class=&quot;headerlink&quot; title=&quot;类型&quot;&gt;&lt;/a&gt;类型&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;标准I&amp;#x2F;O:键盘-&amp;gt;屏幕&lt;/li&gt;
+&lt;li&gt;文件I&amp;#x2F;O&lt;/li&gt;
+&lt;li&gt;字符串I&amp;#x2F;O:字符</summary>
+      
+    
+    
+    
+    <category term="cpp learning" scheme="https://ra4-z.github.io/categories/cpp-learning/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Design Pattern</title>
     <link href="https://ra4-z.github.io/2022/08/03/Design-pattern/"/>
     <id>https://ra4-z.github.io/2022/08/03/Design-pattern/</id>
     <published>2022-08-03T15:28:49.000Z</published>
-    <updated>2022-08-03T16:07:39.378Z</updated>
+    <updated>2022-08-03T16:25:45.008Z</updated>
     
     <content type="html"><![CDATA[<h1 id="单例模式"><a href="#单例模式" class="headerlink" title="单例模式"></a>单例模式</h1><ol><li>将构造函数、拷贝构造函数和赋值符号函数私有化</li><li>在类中定义一个静态的指向本类型的指针变量 </li><li>定义一个返回值为类指针的静态成员函数<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Singleton</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">static</span> Singleton * <span class="title">getInstance</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="literal">nullptr</span> == _pInstance)</span><br><span class="line">            &#123; _pInstance = <span class="keyword">new</span> <span class="built_in">Singleton</span>(); &#125;</span><br><span class="line">        <span class="keyword">return</span> _pInstance;</span><br><span class="line">    &#125; </span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="built_in">Singleton</span>() &#123;&#125;</span><br><span class="line">    <span class="built_in">Singleton</span>(Singleton &amp;other)&#123;&#125;</span><br><span class="line">    <span class="type">void</span> <span class="keyword">operator</span>=(<span class="type">const</span> Singleton &amp;) &#123;&#125;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    Static Singleton * _pInstance;</span><br><span class="line">&#125;;</span><br><span class="line">Singleton * Singleton::_pInstance = <span class="literal">nullptr</span>;</span><br></pre></td></tr></table></figure></li></ol><p>这样会产生内存泄漏，没有释放的过程</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Singleton</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line"><span class="type">static</span> Singleton* instance;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line"><span class="built_in">Singleton</span>() &#123; &#125;;</span><br><span class="line">~<span class="built_in">Singleton</span>() &#123; &#125;;</span><br><span class="line"><span class="built_in">Singleton</span>(<span class="type">const</span> Singleton&amp;);</span><br><span class="line">Singleton&amp; <span class="keyword">operator</span>=(<span class="type">const</span> Singleton&amp;);</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Deletor</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">~<span class="built_in">Deletor</span>() &#123;</span><br><span class="line"><span class="keyword">if</span>(Singleton::instance != <span class="literal">NULL</span>)</span><br><span class="line"><span class="keyword">delete</span> Singleton::instance;</span><br><span class="line">&#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="type">static</span> Deletor deletor;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line"><span class="function"><span class="type">static</span> Singleton* <span class="title">getInstance</span><span class="params">()</span> </span>&#123;</span><br><span class="line"><span class="keyword">if</span>(instance == <span class="literal">NULL</span>) &#123;</span><br><span class="line">instance = <span class="keyword">new</span> <span class="built_in">Singleton</span>();</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> instance;</span><br><span class="line">&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// init static member</span></span><br><span class="line">Singleton* Singleton::instance = <span class="literal">NULL</span>;</span><br><span class="line">Singleton::Deletor Singleton::deletor;</span><br></pre></td></tr></table></figure><p>Reference: <a href="https://zhuanlan.zhihu.com/p/37469260">C++ 单例模式</a></p>]]></content>
     
@@ -35,8 +60,8 @@
     
     
     
+    <category term="cpp learning" scheme="https://ra4-z.github.io/categories/cpp-learning/"/>
     
-    <category term="cpp" scheme="https://ra4-z.github.io/tags/cpp/"/>
     
   </entry>
   
@@ -67,7 +92,7 @@
     <link href="https://ra4-z.github.io/2022/08/03/cpp-memory/"/>
     <id>https://ra4-z.github.io/2022/08/03/cpp-memory/</id>
     <published>2022-08-03T15:03:36.000Z</published>
-    <updated>2022-08-03T16:07:38.512Z</updated>
+    <updated>2022-08-03T16:26:00.153Z</updated>
     
     <content type="html"><![CDATA[<ol><li>栈区(stack):由编译器自动分配释放，存放函数的参数值，局部变量的值等。其操作方式类似于数据结构中的栈。</li><li>堆区(heap):一般由程序员分配释放，若程序员不释放，程序结束时可能由OS回收。注意它与数据结构中的堆是两回事，分配方式倒是类似于链表。</li><li>全局&#x2F;静态区(static):全局变量和静态变量的存储是放在一块的，在程序编译时分配。</li><li>文字常量区:存放常量字符串。</li><li>程序代码区:存放函数体(类的成员函数、全局函数)的二进制代码</li></ol>]]></content>
     
