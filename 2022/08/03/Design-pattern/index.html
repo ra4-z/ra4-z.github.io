@@ -17,20 +17,20 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>c++ = c + ? | ra4&#39;s blog</title>
-  <meta name="description" content="namespaceconst!考点从右往左看法  const int * p; int const * p; int * const p; const int * const p;首先，4没有什么好说的。其他的都首先找到变量p，然后从右往左解析。看看1，p是一个指针，指向的是一个int，然后int是const的。即p是一个指向const int的指针。看看2，p是一个指针，指向一个const什么东">
+  <title>Design Pattern | ra4&#39;s blog</title>
+  <meta name="description" content="单例模式1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465class Singleton&amp;#123;    &#x2F;**     * The Singleton&amp;#x27;s constructor should">
 <meta property="og:type" content="article">
-<meta property="og:title" content="c++ &#x3D; c + ?">
-<meta property="og:url" content="https://ra4-z.github.io/2021/08/12/c-vs-cpp/index.html">
+<meta property="og:title" content="Design Pattern">
+<meta property="og:url" content="https://ra4-z.github.io/2022/08/03/Design-pattern/index.html">
 <meta property="og:site_name" content="ra4&#39;s blog">
-<meta property="og:description" content="namespaceconst!考点从右往左看法  const int * p; int const * p; int * const p; const int * const p;首先，4没有什么好说的。其他的都首先找到变量p，然后从右往左解析。看看1，p是一个指针，指向的是一个int，然后int是const的。即p是一个指向const int的指针。看看2，p是一个指针，指向一个const什么东">
+<meta property="og:description" content="单例模式1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465class Singleton&amp;#123;    &#x2F;**     * The Singleton&amp;#x27;s constructor should">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-08-12T09:39:00.000Z">
-<meta property="article:modified_time" content="2022-08-03T15:02:50.637Z">
+<meta property="article:published_time" content="2022-08-03T15:28:49.000Z">
+<meta property="article:modified_time" content="2022-08-03T15:31:25.116Z">
 <meta property="article:author" content="ra4">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://ra4-z.github.io/2021/08/12/c-vs-cpp/index.html">
+  <link rel="canonical" href="https://ra4-z.github.io/2022/08/03/Design-pattern/index.html">
   
     <link rel="alternate" href="/atom.xml" title="ra4&#39;s blog" type="application/atom+xml">
   
@@ -216,7 +216,7 @@
   <div class="widget">
     <h3 class="widget-title">Archive</h3>
     <div class="widget-body">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/07/">July 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">May 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a><span class="archive-list-count">2</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">August 2022</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/07/">July 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">May 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -237,25 +237,16 @@
 
   
   
-  <aside class="sidebar sidebar-toc collapse   in  " id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
-  <div class="slimContent">
-    <nav id="toc" class="article-toc">
-      <h3 class="toc-title">Catalogue</h3>
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#namespace"><span class="toc-text">namespace</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#const"><span class="toc-text">const</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#new-x2F-delete"><span class="toc-text">new&#x2F;delete</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BC%95%E7%94%A8-x2F-%E5%88%AB%E5%90%8D"><span class="toc-text">引用&#x2F;别名</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BC%BA%E5%88%B6%E8%BD%AC%E6%8D%A2"><span class="toc-text">强制转换</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E9%87%8D%E8%BD%BD"><span class="toc-text">函数重载</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E9%BB%98%E8%AE%A4%E5%8F%82%E6%95%B0"><span class="toc-text">函数默认参数</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#bool-%E7%B1%BB%E5%9E%8B"><span class="toc-text">bool 类型</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#inline-%E5%87%BD%E6%95%B0"><span class="toc-text">inline 函数</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BC%82%E5%B8%B8%E5%AE%89%E5%85%A8"><span class="toc-text">异常安全</span></a></li></ol>
-    </nav>
-  </div>
-</aside>
-
 <main class="main" role="main">
   <div class="content">
-  <article id="post-c-vs-cpp" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-Design-pattern" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      c++ = c + ?
+      Design Pattern
     </h1>
   
 
@@ -263,16 +254,11 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2021/08/12/c-vs-cpp/" class="article-date">
-	  <time datetime="2021-08-12T09:39:00.000Z" itemprop="datePublished">2021-08-12</time>
+	<a href="/2022/08/03/Design-pattern/" class="article-date">
+	  <time datetime="2022-08-03T15:28:49.000Z" itemprop="datePublished">2022-08-03</time>
 	</a>
 </span>
         
-  <span class="article-category">
-    <i class="icon icon-folder"></i>
-    <a class="article-category-link" href="/categories/cpp-learning/">cpp learning</a>
-  </span>
-
         
 
         
@@ -284,10 +270,10 @@
 	</span>
 
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2021/08/12/c-vs-cpp/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/08/03/Design-pattern/#comments" class="article-comment-link">Comments</a></span>
         
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 452(words)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 201(words)</span>
 	
 	
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 1(minutes)</span>
@@ -297,25 +283,7 @@
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <h1 id="namespace"><a href="#namespace" class="headerlink" title="namespace"></a>namespace</h1><h1 id="const"><a href="#const" class="headerlink" title="const"></a>const</h1><p>!考点<br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/31044695/answer/51839777">从右往左看法</a></p>
-<ol>
-<li>const int * p;</li>
-<li>int const * p;</li>
-<li>int * const p;</li>
-<li>const int * const p;<br>首先，4没有什么好说的。其他的都首先找到变量p，然后从右往左解析。看看1，p是一个指针，指向的是一个int，然后int是const的。即p是一个指向const int的指针。看看2，p是一个指针，指向一个const什么东西，然后发现const的是int。即p是一个指向const int的指针。看看3，p是一个const的什么东西，然后发现是const的指针，然后发现指向的是int。即p是一个指向int的const指针。看看4，其实不需要分析了，就是最严格的形式。</li>
-</ol>
-<h1 id="new-x2F-delete"><a href="#new-x2F-delete" class="headerlink" title="new&#x2F;delete"></a>new&#x2F;delete</h1><p>！考点<br>new&#x2F;delete表达式与malloc&#x2F;free的区别是？<br>1）malloc&#x2F;free是C&#x2F;C++语言的标准库函数，new&#x2F;delete是C++的运算符或表达式 ；<br>2）new能够自动分配空间大小，malloc需要传入参数； 3）new开辟空间的同时还对空间做了初始化的操作，而malloc不行；<br>4）new&#x2F;delete能对对象进行构造和析构函数的调用，进而对内存进行更加详细的工 作，而malloc&#x2F;free不能。</p>
-<h1 id="引用-x2F-别名"><a href="#引用-x2F-别名" class="headerlink" title="引用&#x2F;别名"></a>引用&#x2F;别名</h1><h1 id="强制转换"><a href="#强制转换" class="headerlink" title="强制转换"></a>强制转换</h1><p>static_cast: 一般转换</p>
-<p>dynamic_cast:基类、派生类</p>
-<p>const_cast: 常量指针&#x2F;常量引用&#x2F;常量对象，转换成非常量（且指向原来对象）</p>
-<p>reinterpret_cast:重新解释，随意转换</p>
-<h1 id="函数重载"><a href="#函数重载" class="headerlink" title="函数重载"></a>函数重载</h1><h1 id="函数默认参数"><a href="#函数默认参数" class="headerlink" title="函数默认参数"></a>函数默认参数</h1><h1 id="bool-类型"><a href="#bool-类型" class="headerlink" title="bool 类型"></a>bool 类型</h1><h1 id="inline-函数"><a href="#inline-函数" class="headerlink" title="inline 函数"></a>inline 函数</h1><h1 id="异常安全"><a href="#异常安全" class="headerlink" title="异常安全"></a>异常安全</h1><p><code>throw</code></p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">double</span> <span class="title">division</span><span class="params">(<span class="type">double</span> x, <span class="type">double</span> y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(y == <span class="number">0</span>)</span><br><span class="line">        <span class="keyword">throw</span> <span class="string">&quot;Division by zero condition!&quot;</span>;</span><br><span class="line"><span class="keyword">return</span> x / y; &#125;</span><br></pre></td></tr></table></figure>
-
-<p><code>try catch</code></p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">test</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">double</span> x, y;</span><br><span class="line">    cin &gt;&gt; x &gt;&gt; y;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="keyword">if</span>(y == <span class="number">0</span>)</span><br><span class="line">            <span class="keyword">throw</span> y;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            cout &lt;&lt; (x / y) &lt;&lt; endl;</span><br><span class="line">    &#125; <span class="built_in">catch</span>(<span class="type">double</span> d) &#123;</span><br><span class="line">cout &lt;&lt; <span class="string">&quot;catch(double)&quot;</span> &lt;&lt; endl;</span><br></pre></td></tr></table></figure>
-
-
+        <h1 id="单例模式"><a href="#单例模式" class="headerlink" title="单例模式"></a>单例模式</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Singleton</span></span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * The Singleton&#x27;s constructor should always be private to prevent direct</span></span><br><span class="line"><span class="comment">     * construction calls with the `new` operator.</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">protected</span>:</span><br><span class="line">    <span class="built_in">Singleton</span>(<span class="type">const</span> std::string value): <span class="built_in">value_</span>(value)</span><br><span class="line">    &#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="type">static</span> Singleton* singleton_;</span><br><span class="line"></span><br><span class="line">    std::string value_;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Singletons should not be cloneable.</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="built_in">Singleton</span>(Singleton &amp;other) = <span class="keyword">delete</span>;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Singletons should not be assignable.</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="type">void</span> <span class="keyword">operator</span>=(<span class="type">const</span> Singleton &amp;) = <span class="keyword">delete</span>;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * This is the static method that controls the access to the singleton</span></span><br><span class="line"><span class="comment">     * instance. On the first run, it creates a singleton object and places it</span></span><br><span class="line"><span class="comment">     * into the static field. On subsequent runs, it returns the client existing</span></span><br><span class="line"><span class="comment">     * object stored in the static field.</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">static</span> Singleton *<span class="title">GetInstance</span><span class="params">(<span class="type">const</span> std::string&amp; value)</span></span>;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Finally, any singleton should define some business logic, which can be</span></span><br><span class="line"><span class="comment">     * executed on its instance.</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">SomeBusinessLogic</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="comment">// ...</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function">std::string <span class="title">value</span><span class="params">()</span> <span class="type">const</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> value_;</span><br><span class="line">    &#125; </span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">Singleton* Singleton::singleton_= <span class="literal">nullptr</span>;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Static methods should be defined outside the class.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function">Singleton *<span class="title">Singleton::GetInstance</span><span class="params">(<span class="type">const</span> std::string&amp; value)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * This is a safer way to create an instance. instance = new Singleton is</span></span><br><span class="line"><span class="comment">     * dangeruous in case two instance threads wants to access at the same time</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">if</span>(singleton_==<span class="literal">nullptr</span>)&#123;</span><br><span class="line">        singleton_ = <span class="keyword">new</span> <span class="built_in">Singleton</span>(value);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> singleton_;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     <div class="article-footer">
@@ -324,7 +292,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://ra4-z.github.io/2021/08/12/c-vs-cpp/" title="c++ = c + ?" target="_blank" rel="external">https://ra4-z.github.io/2021/08/12/c-vs-cpp/</a>
+      <a href="https://ra4-z.github.io/2022/08/03/Design-pattern/" title="Design Pattern" target="_blank" rel="external">https://ra4-z.github.io/2022/08/03/Design-pattern/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -372,23 +340,11 @@
   
   <ul class="pager pull-left">
     
-    <li class="prev">
-      <a href="/2022/05/04/ubuntu_install/" title="自用完美教程： ubuntu20.04 显卡驱动 CUDA CUDNN 依据官网安装"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;Newer</span></a>
-    </li>
-    
     
     <li class="next">
-      <a href="/2021/08/12/ssh-add-port/" title="ssh服务增加端口的两个方法"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2022/08/03/cpp-class/" title="c++_class"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
-    
-    <li class="toggle-toc">
-      <a class="toggle-btn " data-toggle="collapse" href="#collapseToc" aria-expanded="false" title="Catalogue" role="button">    <span>[&nbsp;</span><span>Catalogue</span>
-        <i class="text-collapsed icon icon-anchor"></i>
-        <i class="text-in icon icon-close"></i>
-        <span>]</span>
-      </a>
-    </li>
     
   </ul>
   
@@ -523,9 +479,9 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
     <script defer>
     var disqus_config = function () {
         
-            this.page.url = 'https://ra4-z.github.io/2021/08/12/c-vs-cpp/';
+            this.page.url = 'https://ra4-z.github.io/2022/08/03/Design-pattern/';
         
-        this.page.identifier = 'c-vs-cpp';
+        this.page.identifier = 'Design-pattern';
     };
     (function() { 
         var d = document, s = d.createElement('script');  

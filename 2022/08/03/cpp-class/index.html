@@ -17,23 +17,20 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>ssh服务增加端口的两个方法 | ra4&#39;s blog</title>
-  <meta name="description" content="Method 1 sshd指令1sudo &#x2F;usr&#x2F;sbin&#x2F;sshd -p 12345 这样就可以远程的时候使用12345端口进行连接了。 sshd是ssh的守护进程，上面这条指令实际上是使用一个进程来监控这个端口。 如果需要停掉这个连接的端口可以： 12ps -aux | grep sshdkill -9 &amp;#123;porcess of sshd of your added port&amp;#12">
+  <title>c++_class | ra4&#39;s blog</title>
+  <meta name="description" content="class vs struct唯一的区别，就是默认访问权限不同。 class 的默认访问权限是private ， struct 的默认访问权限是 public 拷贝构造函数调用时机:  当把一个已经存在的对象赋值给另一个新对象时，会调用拷贝构造函数。  当实参和形参都是对象，进行实参与形参的结合时，会调用拷贝构造函数。 123456void f(A p);void main()&amp;#123;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ssh服务增加端口的两个方法">
-<meta property="og:url" content="https://ra4-z.github.io/2021/08/12/ssh-add-port/index.html">
+<meta property="og:title" content="c++_class">
+<meta property="og:url" content="https://ra4-z.github.io/2022/08/03/cpp-class/index.html">
 <meta property="og:site_name" content="ra4&#39;s blog">
-<meta property="og:description" content="Method 1 sshd指令1sudo &#x2F;usr&#x2F;sbin&#x2F;sshd -p 12345 这样就可以远程的时候使用12345端口进行连接了。 sshd是ssh的守护进程，上面这条指令实际上是使用一个进程来监控这个端口。 如果需要停掉这个连接的端口可以： 12ps -aux | grep sshdkill -9 &amp;#123;porcess of sshd of your added port&amp;#12">
+<meta property="og:description" content="class vs struct唯一的区别，就是默认访问权限不同。 class 的默认访问权限是private ， struct 的默认访问权限是 public 拷贝构造函数调用时机:  当把一个已经存在的对象赋值给另一个新对象时，会调用拷贝构造函数。  当实参和形参都是对象，进行实参与形参的结合时，会调用拷贝构造函数。 123456void f(A p);void main()&amp;#123;">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://ra4-z.github.io/2021/08/12/ssh-add-port/pic.jpg">
-<meta property="article:published_time" content="2021-08-12T09:39:00.000Z">
-<meta property="article:modified_time" content="2022-08-01T01:30:08.517Z">
+<meta property="article:published_time" content="2022-08-03T15:12:12.000Z">
+<meta property="article:modified_time" content="2022-08-03T15:28:03.973Z">
 <meta property="article:author" content="ra4">
-<meta property="article:tag" content="ssh">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://ra4-z.github.io/2021/08/12/ssh-add-port/pic.jpg">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://ra4-z.github.io/2021/08/12/ssh-add-port/index.html">
+  <link rel="canonical" href="https://ra4-z.github.io/2022/08/03/cpp-class/index.html">
   
     <link rel="alternate" href="/atom.xml" title="ra4&#39;s blog" type="application/atom+xml">
   
@@ -240,25 +237,16 @@
 
   
   
-  <aside class="sidebar sidebar-toc collapse   in  " id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
-  <div class="slimContent">
-    <nav id="toc" class="article-toc">
-      <h3 class="toc-title">Catalogue</h3>
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Method-1-sshd%E6%8C%87%E4%BB%A4"><span class="toc-text">Method 1 sshd指令</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Method-2-%E4%BF%AE%E6%94%B9sshd-config"><span class="toc-text">Method 2 修改sshd_config</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%82%E8%80%83"><span class="toc-text">参考</span></a></li></ol>
-    </nav>
-  </div>
-</aside>
-
 <main class="main" role="main">
   <div class="content">
-  <article id="post-ssh-add-port" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-cpp-class" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      ssh服务增加端口的两个方法
+      c++_class
     </h1>
   
 
@@ -266,22 +254,12 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2021/08/12/ssh-add-port/" class="article-date">
-	  <time datetime="2021-08-12T09:39:00.000Z" itemprop="datePublished">2021-08-12</time>
+	<a href="/2022/08/03/cpp-class/" class="article-date">
+	  <time datetime="2022-08-03T15:12:12.000Z" itemprop="datePublished">2022-08-03</time>
 	</a>
 </span>
         
-  <span class="article-category">
-    <i class="icon icon-folder"></i>
-    <a class="article-category-link" href="/categories/net-tools/">net-tools</a>
-  </span>
-
         
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>
-	<a class="article-tag-link-link" href="/tags/ssh/" rel="tag">ssh</a>
-  </span>
-
 
         
 	<span class="article-read hidden-xs">
@@ -292,51 +270,39 @@
 	</span>
 
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2021/08/12/ssh-add-port/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/08/03/cpp-class/#comments" class="article-comment-link">Comments</a></span>
         
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 314(words)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 542(words)</span>
 	
 	
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 1(minutes)</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 2(minutes)</span>
 	
 
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <h1 id="Method-1-sshd指令"><a href="#Method-1-sshd指令" class="headerlink" title="Method 1 sshd指令"></a>Method 1 sshd指令</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /usr/sbin/sshd -p 12345</span><br></pre></td></tr></table></figure>
-<p>这样就可以远程的时候使用12345端口进行连接了。</p>
-<p>sshd是ssh的守护进程，上面这条指令实际上是使用一个进程来监控这个端口。</p>
-<p>如果需要停掉这个连接的端口可以：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ps -aux | grep sshd</span><br><span class="line"><span class="built_in">kill</span> -9 &#123;porcess of sshd of your added port&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="Method-2-修改sshd-config"><a href="#Method-2-修改sshd-config" class="headerlink" title="Method 2 修改sshd_config"></a>Method 2 修改sshd_config</h1><ol>
-<li><p>vim &#x2F;etc&#x2F;ssh&#x2F;sshd_config添加如下一行：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Port 929</span><br></pre></td></tr></table></figure>
-
-</li>
-<li><p>重启ssh服务：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/etc/init.d/ssh restart</span><br></pre></td></tr></table></figure>
-
-</li>
-<li><p>查看ssh服务监听的端口是否为已设置端口：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo netstat -tunlp | grep ssh</span><br></pre></td></tr></table></figure>
-<p><img src="/2021/08/12/ssh-add-port/pic.jpg" alt="pic"><br>说明端口已经打开。可以用ssh进行连接测试，如果用该端口可以连接，则ok。否则可能是因为防火墙屏蔽了该端口，则需要防火墙打开该端口。</p>
-</li>
-</ol>
-<p>防火墙打开端口：</p>
+        <h1 id="class-vs-struct"><a href="#class-vs-struct" class="headerlink" title="class vs struct"></a>class vs struct</h1><p>唯一的区别，就是默认访问权限不同。 <code>class</code> 的默认访问权限是<code>private</code> ， <code>struct</code> 的默认访问权限是 <code>public</code></p>
+<h1 id="拷贝构造函数"><a href="#拷贝构造函数" class="headerlink" title="拷贝构造函数"></a>拷贝构造函数</h1><p>调用时机:</p>
 <ol>
-<li><p>防火墙过滤规则中增加一条，允许对新增的端口929的访问：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -A INPUT -m state --state NEW -m tcp -p tcp --dport 929 -j ACCEPT</span><br></pre></td></tr></table></figure>
-
+<li><p>当把一个已经存在的对象赋值给另一个新对象时，会调用拷贝构造函数。</p>
 </li>
-<li><p>防火墙规则查看是否生效：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables --list -n 查看端口是否生效。</span><br></pre></td></tr></table></figure></li>
-<li><p>保存</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service iptables save</span><br></pre></td></tr></table></figure></li>
+<li><p>当实参和形参都是对象，进行实参与形参的结合时，会调用拷贝构造函数。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">f</span><span class="params">(A p)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    A a;</span><br><span class="line">    <span class="built_in">f</span>(a);<span class="comment">//a实参去初始化形参p，会调用copy构造函数</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>当函数的返回值是对象，函数调用完成返回时，会调用拷贝构造函数。</p>
+</li>
 </ol>
-<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a target="_blank" rel="noopener" href="https://www.linuxcool.com/sshd">sshd命令 – openssh服务器守护进程</a><br><a target="_blank" rel="noopener" href="https://www.huaweicloud.com/articles/3cc874da0de5494dbf1e895c5a98f67f.html">SSH服务相关知识</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/sinat_29891353/article/details/87460790">linux ubuntu 修改ssh端口及常用命令</a><br><a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1047301">一款短小精致的SSH后门分析</a></p>
+<h1 id="赋值运算函数"><a href="#赋值运算函数" class="headerlink" title="赋值运算函数"></a>赋值运算函数</h1><p>默认情况下依然会采用浅拷贝的方式拷贝字符串。当两个对象被销毁时，同样会造成<code>double free</code>的问题，因此缺省赋值运算符函数不再满足需求，此时需要显式定义赋值运算符函数.</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* double free</span></span><br><span class="line"><span class="comment">Computer &amp; Computer::operator=(const Computer &amp; rhs)&#123;</span></span><br><span class="line"><span class="comment">    _brand = rhs._brand;</span></span><br><span class="line"><span class="comment">    _price = rhs._price;</span></span><br><span class="line"><span class="comment">    return *this;</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">Computer &amp; Computer::<span class="keyword">operator</span>=(<span class="type">const</span> Computer &amp; rhs)&#123;</span><br><span class="line">    <span class="keyword">if</span>(<span class="keyword">this</span> != &amp;rhs) &#123;</span><br><span class="line">        <span class="keyword">delete</span> [] _brand;</span><br><span class="line">        _brand = <span class="keyword">new</span> <span class="type">char</span>[<span class="built_in">strlen</span>(rhs._brand) + <span class="number">1</span>]();</span><br><span class="line">        <span class="built_in">strcpy</span>(_brand, rhs._brand);</span><br><span class="line">        _price = rhs._price;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> *<span class="keyword">this</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="静态数据成员"><a href="#静态数据成员" class="headerlink" title="静态数据成员"></a>静态数据成员</h1><p>静态数据成员和静态变量一样，当程序执行时，该成员已经存在，一直到程序结束，任 何该类对象都可对其进行访问，静态数据成员存储在全局&#x2F;静态区，并不占据对象的存储空间。<br>静态数据成员不属于类的任何一个对象，所以不能在类内部初始化静态数据成员，必须在类的外部定义和初始化静态数据成员。</p>
+<h1 id="静态成员函数"><a href="#静态成员函数" class="headerlink" title="静态成员函数"></a>静态成员函数</h1><p>静态成员函数的参数列表中不含有隐含的<code>this</code>指针，静态成员函数内部不能使用非静态的成员变量和非静态的成员函数,只能调用静态数据成员和静态的成员函数。</p>
+<h1 id="const成员函数"><a href="#const成员函数" class="headerlink" title="const成员函数"></a><code>const</code>成员函数</h1><ol>
+<li>只能读取类数据成员，而不能修改之。</li>
+<li>只能调用const成员函数，不能调用非const成员函数。</li>
+</ol>
 
       
     </div>
@@ -346,7 +312,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://ra4-z.github.io/2021/08/12/ssh-add-port/" title="ssh服务增加端口的两个方法" target="_blank" rel="external">https://ra4-z.github.io/2021/08/12/ssh-add-port/</a>
+      <a href="https://ra4-z.github.io/2022/08/03/cpp-class/" title="c++_class" target="_blank" rel="external">https://ra4-z.github.io/2022/08/03/cpp-class/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -395,18 +361,14 @@
   <ul class="pager pull-left">
     
     <li class="prev">
-      <a href="/2022/05/04/ubuntu_install/" title="自用完美教程： ubuntu20.04 显卡驱动 CUDA CUDNN 依据官网安装"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;Newer</span></a>
+      <a href="/2022/08/03/Design-pattern/" title="Design Pattern"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;Newer</span></a>
     </li>
     
     
-    
-    <li class="toggle-toc">
-      <a class="toggle-btn " data-toggle="collapse" href="#collapseToc" aria-expanded="false" title="Catalogue" role="button">    <span>[&nbsp;</span><span>Catalogue</span>
-        <i class="text-collapsed icon icon-anchor"></i>
-        <i class="text-in icon icon-close"></i>
-        <span>]</span>
-      </a>
+    <li class="next">
+      <a href="/2022/08/03/cpp-memory/" title="c++_memory"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
+    
     
   </ul>
   
@@ -541,9 +503,9 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
     <script defer>
     var disqus_config = function () {
         
-            this.page.url = 'https://ra4-z.github.io/2021/08/12/ssh-add-port/';
+            this.page.url = 'https://ra4-z.github.io/2022/08/03/cpp-class/';
         
-        this.page.identifier = 'ssh-add-port';
+        this.page.identifier = 'cpp-class';
     };
     (function() { 
         var d = document, s = d.createElement('script');  
