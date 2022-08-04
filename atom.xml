@@ -158,6 +158,34 @@
   </entry>
   
   <entry>
+    <title>TODO</title>
+    <link href="https://ra4-z.github.io/2022/07/25/TODO/"/>
+    <id>https://ra4-z.github.io/2022/07/25/TODO/</id>
+    <published>2022-07-24T17:56:07.000Z</published>
+    <updated>2022-08-04T06:50:11.716Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="TODO"><a href="#TODO" class="headerlink" title="TODO:"></a>TODO:</h1><ul><li><input disabled type="checkbox"> 域名  </li><li><input checked disabled type="checkbox"> <a href="https://titangene.github.io/article/hexo-disqus.html">Hexo 加入 Disqus 留言版 (包含留言數)</a></li><li><input checked disabled type="checkbox"> <a href="https://github.com/cofess/hexo-theme-pure/blob/master/README.cn.md">pure使用指南</a></li><li><input disabled type="checkbox"> Icarus补充内容</li><li><input disabled type="checkbox"> 搬运gitpages到github</li><li><input disabled type="checkbox"> 搬运segmentfault到gitpages</li></ul><h1 id="Questions"><a href="#Questions" class="headerlink" title="Questions:"></a>Questions:</h1><p>Pure主题下，Categories和Tags都没有自动生成index.html文件。怎么办？<br>About也是。为啥像tags.md那样就能有效果？？</p><p><code>public/archives/</code>里有个index.html文件，但<code>public/categorys/</code>和<code>public/tags/</code>没有。</p><h1 id="Refenrences"><a href="#Refenrences" class="headerlink" title="Refenrences:"></a>Refenrences:</h1><h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><p><a href="https://hexo.io/zh-cn/">Hexo doc</a></p><h2 id="Themes"><a href="#Themes" class="headerlink" title="Themes"></a>Themes</h2><p><a href="https://ppoffice.github.io/hexo-theme-icarus/uncategorized/icarus%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B/">Icarus快速上手</a></p><p><a href="https://github.com/theme-next/hexo-theme-next">next theme</a></p><p><a href="https://github.com/blinkfox/hexo-theme-matery">blink fox</a></p><p><a href="https://github.com/jerryc127/hexo-theme-butterfly">butterfly</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;TODO&quot;&gt;&lt;a href=&quot;#TODO&quot; class=&quot;headerlink&quot; title=&quot;TODO:&quot;&gt;&lt;/a&gt;TODO:&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;input disabled type=&quot;checkbox&quot;&gt; 域名  &lt;/li&gt;
+&lt;li&gt;&lt;input </summary>
+      
+    
+    
+    
+    <category term="TODO" scheme="https://ra4-z.github.io/categories/TODO/"/>
+    
+    <category term="test" scheme="https://ra4-z.github.io/categories/TODO/test/"/>
+    
+    
+    <category term="TODO" scheme="https://ra4-z.github.io/tags/TODO/"/>
+    
+  </entry>
+  
+  <entry>
     <title>自用完美教程： ubuntu20.04 显卡驱动 CUDA CUDNN 依据官网安装</title>
     <link href="https://ra4-z.github.io/2022/05/04/ubuntu_install/"/>
     <id>https://ra4-z.github.io/2022/05/04/ubuntu_install/</id>
