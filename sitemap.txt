@@ -1,6 +1,7 @@
+https://ra4-z.github.io/2022/09/16/mac-gcc-broken-repeatedly/
+https://ra4-z.github.io/2022/08/04/cpp-IO-stream/
 https://ra4-z.github.io/2022/07/25/TODO/
 https://ra4-z.github.io/2022/08/03/Design-pattern/
-https://ra4-z.github.io/2022/08/04/cpp-IO-stream/
 https://ra4-z.github.io/2022/08/03/cpp-memory/
 https://ra4-z.github.io/2022/07/29/hexo-record/
 https://ra4-z.github.io/2022/08/03/cpp-class/
@@ -27,3 +28,4 @@ https://ra4-z.github.io/categories/TODO/test/
 https://ra4-z.github.io/categories/hexo/
 https://ra4-z.github.io/categories/net-tools/
 https://ra4-z.github.io/categories/ubuntu-init/
+https://ra4-z.github.io/categories/MacOS/
