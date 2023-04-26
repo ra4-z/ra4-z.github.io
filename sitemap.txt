@@ -1,6 +1,5 @@
 https://ra4-z.github.io/2022/09/16/mac-gcc-broken-repeatedly/
 https://ra4-z.github.io/2022/08/04/cpp-IO-stream/
-https://ra4-z.github.io/2022/07/25/TODO/
 https://ra4-z.github.io/2022/08/03/Design-pattern/
 https://ra4-z.github.io/2022/08/03/cpp-memory/
 https://ra4-z.github.io/2022/07/29/hexo-record/
@@ -15,17 +14,14 @@ https://ra4-z.github.io/categories/index.html
 https://ra4-z.github.io/tags/index.html
 https://ra4-z.github.io/repository/index.html
 https://ra4-z.github.io/
-https://ra4-z.github.io/tags/TODO/
 https://ra4-z.github.io/tags/hexo/
-https://ra4-z.github.io/tags/ssh/
 https://ra4-z.github.io/tags/ubuntu/
 https://ra4-z.github.io/tags/driver/
 https://ra4-z.github.io/tags/cuda/
 https://ra4-z.github.io/tags/cudnn/
+https://ra4-z.github.io/tags/ssh/
 https://ra4-z.github.io/categories/cpp-learning/
-https://ra4-z.github.io/categories/TODO/
-https://ra4-z.github.io/categories/TODO/test/
 https://ra4-z.github.io/categories/hexo/
-https://ra4-z.github.io/categories/net-tools/
-https://ra4-z.github.io/categories/ubuntu-init/
 https://ra4-z.github.io/categories/MacOS/
+https://ra4-z.github.io/categories/ubuntu-init/
+https://ra4-z.github.io/categories/net-tools/
